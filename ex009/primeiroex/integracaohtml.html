@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../estilo/estilo.css">
+    <title>Document</title>
+    <style>
+        input#ivalor{
+            background-color: rgb(226, 226, 226);
+            border: 1px solid white;
+            border-radius: 5px;
+            height: 25px;
+            padding-left: 10px;
+        }
+        input#sub{
+            background-color: #59699A;
+            border: 1px solid #59699A;
+            border-radius: 5px;
+            width: 80px;
+            height: 30px;
+        }
+        input#sub:hover{
+            background-color: #798dcc;
+            cursor: pointer;
+            transition-duration: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Estudos sobre</h1>
+        <p><img src="../../estilo/php-logo.webp" alt=""></p><hr color="#59699A">
+    </header>
+    <main>
+        <section>
+            Arquivo HTML - integração entre o HTML e o PHP
+        </section>
+        <div>
+            <h2>Calculador de raiz quadrada</h2><br>
+            <form action="integracao.php" method="post">
+                <label for="ivalor">Valor:</label>
+                <input type="number" name="valor" id="ivalor">
+                <input type="submit" value="Calcular" id="sub">
+            </form>
+        </div>
+    </main>
+    <footer>
+        &copy; Leandro Pessoa
+    </footer>
+    <script>
+        var valor = document.getElementById('ivalor')
+        valor.focus()
+    </script>
+</body>
+</html>
