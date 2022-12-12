@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetições</title>
+    <link rel="stylesheet" href="../../estilo/estilo.css">
+</head>
+<style>
+    #ifim{
+        margin-left: 10px;
+    }
+    #ipas{
+        margin-left: 20px;
+    }
+</style>
+<body>
+    <header>
+        <h1>Estudos sobre</h1>
+        <p><img src="../../estilo/php-logo.webp" alt=""></p><hr color="#59699A">
+    </header>
+    <main>
+        <section>
+            Arquivo HTML - Repetições
+        </section>
+        <div>
+            <form action="repeticoes3.php" method="get">
+                <p>
+                    <label for="iini">Início:</label>
+                    <input type="number" name="ini" id="iini" required class="inp">
+                </p>
+                <p>
+                    <label for="ifim">Final:</label>
+                    <input type="number" name="fim" id="ifim" required
+                    class="inp">
+                </p>
+                <p>
+                    <label for="ipas">Passo</label>
+                    <select name="pas" id="ipas" required class="inp">
+                        <option value="">-</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </p>
+                <p><input type="submit" value="Gerar" class="sub"></p>
+            </form>
+        </div>
+    </main>
+    <footer>
+        &copy; Leandro Pessoa
+    </footer>
+</body>
+</html>
